@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import catsReducer from '../features/catsSlice';
+import catsReducer from '../src/features/catsSlice';
 
 
 export const store = configureStore({

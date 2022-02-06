@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { cats } from "../../../data";
+import { cats } from "../../../../data";
 
 const handler = (req: NextApiRequest, res:NextApiResponse) => {
     const { id } = req.query;

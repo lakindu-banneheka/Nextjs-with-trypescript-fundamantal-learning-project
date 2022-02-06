@@ -1,13 +1,12 @@
 import React, { FC, useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
-import Nav from '../../components/Nav/Nav';
 import { useDispatch } from 'react-redux';
 import { cat, getCats } from '../../features/catsSlice';
-import { useAppSelector } from '../../store/store';
+import { useAppSelector } from '../../../store/store';
 import { Content } from 'antd/lib/layout/layout';
 import { Col, Row, Space } from 'antd';
-import DefaultLayout from '../../Layout/DefaultLayout';
 import { header } from '../../hooks/header';
+import DefaultLayout from '../../Layout/DefaultLayout';
 
 interface ICatsProps {
     
