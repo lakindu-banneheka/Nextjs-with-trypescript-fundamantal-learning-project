@@ -5,12 +5,12 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { FC, useLayoutEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import Nav from '../../components/Nav/Nav';
+import { useAppSelector } from '../../../store/store';
 import { cat, getACat } from '../../features/catsSlice';
 import { header } from '../../hooks/header';
 import { imageLoader } from '../../hooks/ImageHooks';
+// import { useAppSelector } from '../../../store/store';
 import DefaultLayout from '../../Layout/DefaultLayout';
-import { useAppSelector } from '../../store/store';
 
 interface ICatPageProps {
     

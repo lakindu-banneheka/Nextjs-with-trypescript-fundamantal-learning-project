@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { cats } from '../../../data'
+import { cats } from '../../../../data'
 
 type TypeCats = typeof cats;
 type Data = TypeCats;
