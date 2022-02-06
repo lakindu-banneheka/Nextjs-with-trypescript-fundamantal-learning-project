@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import { RootSate } from "../store/store";
 
 export interface cat {
     color: string,
@@ -50,7 +49,6 @@ const initialState: IinitialState = {
 
 export const getCats = createAsyncThunk("cats/getCats", async () => {
     const res = await axios.get("/api/cats");
-    // console.log( res.data ,'api res')
     return res.data;
 });
 
